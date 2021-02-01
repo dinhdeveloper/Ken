@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutRootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cl_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_header_dashboard" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp10"
+        android:fontFamily="@font/rosario_bold"
+        android:padding="7dp"
+        android:text="Trang Chủ"
+        android:textColor="@color/black"
+        android:textSize="24dp" />
+
+    <include layout="@layout/layout_search" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/layoutHeaderSlide"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginVertical="@dimen/dp10"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/viewEmptyImageSlider"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="TODO"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/no_image_full"
+                    android:visibility="gone"
+                    tools:visibility="visible" />
+
+                <RelativeLayout
+                    android:id="@+id/layoutSliderImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone">
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/pager_slider_image"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentTop="true" />
+
+                    <b.laixuantam.myaarlibrary.widgets.viewpage.ViewPagerIndicator
+                        android:id="@+id/indicator_pager_slider_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="bottom|center"
+                        android:padding="10dip"
+                        app:itemSelectedTint="@color/white"
+                        app:itemSize="5dp"
+                        app:itemTint="@color/white" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:visibility="visible">
+
+                    <include
+                        android:id="@+id/layoutShimmerSliderDashboard"
+                        layout="@layout/dinh_customer_layout_shimmer_slider_dashboard_customer" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+            <!--end slide-->
+            <RelativeLayout
+                android:layout_marginVertical="@dimen/dp10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <include layout="@layout/dinh_custom_layout_list_category" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginVertical="@dimen/dp10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <include layout="@layout/dinh_custom_layout_list_brand" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginVertical="@dimen/dp10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <include layout="@layout/dinh_custom_layout_list_all_product" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

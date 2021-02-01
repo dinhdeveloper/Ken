@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_ken_icon_user" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rosario_bold"
+                android:padding="5dp"
+                android:text="Xin Chào"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rosario_medium"
+                android:paddingHorizontal="5dp"
+                android:text="Chào mừng bạn ghé thăm shop"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray" />
+
+    <LinearLayout
+        android:id="@+id/layout_button_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp10"
+        android:layout_marginVertical="20dp"
+        android:orientation="horizontal">
+
+        <b.laixuantam.myaarlibrary.widgets.roundview.RoundTextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="@dimen/dp10"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_ken_icon_login"
+            android:drawablePadding="@dimen/dp10"
+            android:fontFamily="@font/rosario_medium"
+            android:gravity="center|start"
+            android:paddingHorizontal="@dimen/dp10"
+            android:text="Đăng nhập"
+            android:textColor="@color/cl_green"
+            android:textSize="14sp"
+            app:rv_cornerRadius="5dp"
+            app:rv_strokeColor="@color/cl_green"
+            app:rv_strokeWidth="1dp" />
+
+        <b.laixuantam.myaarlibrary.widgets.roundview.RoundTextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="@dimen/dp10"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_ken_icon_register"
+            android:drawablePadding="@dimen/dp10"
+            android:fontFamily="@font/rosario_medium"
+            android:gravity="center|start"
+            android:paddingHorizontal="@dimen/dp10"
+            android:text="Đăng ký"
+            android:textColor="@color/cl_green"
+            android:textSize="14sp"
+            app:rv_cornerRadius="5dp"
+            app:rv_strokeColor="@color/cl_green"
+            app:rv_strokeWidth="1dp" />
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dp10"
+                android:layout_marginVertical="@dimen/dp20"
+                android:background="@drawable/bg_shadown_dashboard"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dp20"
+                    android:layout_marginTop="@dimen/dp20"
+                    android:drawableLeft="@drawable/ic_ken_home"
+                    android:drawablePadding="10dp"
+                    android:paddingVertical="3dp"
+                    android:text="Trang chủ"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dp20"
+                    android:layout_marginVertical="5dp"
+                    android:drawableLeft="@drawable/ic_ken_danh_muc_san_pham"
+                    android:drawablePadding="10dp"
+                    android:paddingVertical="3dp"
+                    android:text="Danh mục sản phẩm"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dp20"
+                    android:layout_marginVertical="5dp"
+                    android:drawableLeft="@drawable/ic_ken_notification"
+                    android:drawablePadding="10dp"
+                    android:paddingVertical="3dp"
+                    android:text="Thông báo"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dp20"
+                    android:layout_marginVertical="5dp"
+                    android:drawableLeft="@drawable/ic_ken_brand"
+                    android:drawablePadding="10dp"
+                    android:paddingVertical="3dp"
+                    android:text="Thương hiệu"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dp20"
+                    android:layout_marginVertical="5dp"
+                    android:drawableLeft="@drawable/ic_ken_hang_moi_ve"
+                    android:drawablePadding="10dp"
+                    android:paddingVertical="3dp"
+                    android:text="Hàng mới về"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_marginBottom="@dimen/dp20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dp20"
+                    android:layout_marginTop="5dp"
+                    android:drawableLeft="@drawable/ic_ken_san_pham_ban_chay"
+                    android:drawablePadding="10dp"
+                    android:paddingVertical="3dp"
+                    android:text="Sản phẩm bán chạy"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dp10"
+                android:background="@drawable/bg_shadown_dashboard"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dp20"
+                    android:layout_marginTop="@dimen/dp20"
+                    android:drawableLeft="@drawable/ic_ken_lich_su_don_hang"
+                    android:drawablePadding="10dp"
+                    android:paddingVertical="3dp"
+                    android:text="Kiểm tra đơn hàng"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dp20"
+                    android:layout_marginVertical="5dp"
+                    android:drawableLeft="@drawable/ic_ken_heart"
+                    android:drawablePadding="10dp"
+                    android:paddingVertical="3dp"
+                    android:text="Danh sách yêu thích"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dp20"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="@dimen/dp20"
+                    android:drawableLeft="@drawable/ic_ken_quan_ly_tai_khoan"
+                    android:drawablePadding="10dp"
+                    android:paddingVertical="3dp"
+                    android:text="Quản lý tài khoản"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dp10"
+                android:layout_marginVertical="@dimen/dp20"
+                android:background="@drawable/bg_shadown_dashboard"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dp20"
+                    android:layout_marginTop="@dimen/dp20"
+                    android:drawableLeft="@drawable/ic_ken_best_price"
+                    android:drawablePadding="10dp"
+                    android:paddingVertical="3dp"
+                    android:text="Kiểm tra giá"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dp20"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="@dimen/dp20"
+                    android:drawableLeft="@drawable/ic_ken_phone"
+                    android:drawablePadding="10dp"
+                    android:paddingVertical="3dp"
+                    android:text="Hotline: 0975469232"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+            <b.laixuantam.myaarlibrary.widgets.roundview.RoundTextView
+                android:layout_width="140dp"
+                android:layout_marginBottom="20dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/dp10"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_ken_log_out"
+                android:drawablePadding="@dimen/dp10"
+                android:fontFamily="@font/rosario_medium"
+                android:gravity="center|start"
+                android:paddingHorizontal="@dimen/dp10"
+                android:text="Đăng xuất"
+                android:textColor="#E74C3C"
+                android:textSize="14sp"
+                app:rv_cornerRadius="5dp"
+                app:rv_strokeColor="#E74C3C"
+                app:rv_strokeWidth="1dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

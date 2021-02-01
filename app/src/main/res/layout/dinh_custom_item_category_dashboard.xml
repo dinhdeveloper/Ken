@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="120dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp"
+    android:layout_margin="@dimen/dp10"
+    app:cardBackgroundColor="@color/cl_pick_2">
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginRight="@dimen/dp10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:fontFamily="@font/rosario_bold"
+                android:text="Nước tẩy trang"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:padding="@dimen/dp10"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:fontFamily="@font/rosario_medium"
+                android:text="Nước tẩy trang,nước tẩy trang,,nước tẩy trang,,nước tẩy trang,,nước tẩy trang,"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:paddingHorizontal="@dimen/dp10"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <ImageView
+            android:src="@drawable/lorial"
+            android:layout_gravity="center"
+            android:layout_width="100dp"
+            android:layout_height="100dp"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

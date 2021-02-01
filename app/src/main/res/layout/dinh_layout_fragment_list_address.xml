@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/cl_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_header"/>
+
+    <TextView
+        android:fontFamily="@font/rosario_bold"
+        android:layout_marginHorizontal="@dimen/dp20"
+        android:gravity="center|end"
+        android:layout_gravity="center"
+        android:paddingVertical="5dp"
+        android:text="Xem tất cả"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        tools:listitem="@layout/dinh_custom_item_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

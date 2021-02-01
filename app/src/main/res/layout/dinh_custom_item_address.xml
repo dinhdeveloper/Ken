@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:layout_margin="@dimen/dp10"
+    android:background="@drawable/bg_shadown"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rosario_bold"
+        android:padding="5dp"
+        android:text="Họ tên: Trần Cảnh Dinh"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rosario_bold"
+        android:paddingVertical="2dp"
+        android:paddingHorizontal="@dimen/dp5"
+        android:text="Số điện thoại: 0975469232"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rosario_bold"
+        android:padding="5dp"
+        android:maxLines="2"
+        android:text="Địa chỉ: 179/11 Đường 275, Khu phố 5, Phường Hiệp Phú, Quận 9, TPHCM"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+</LinearLayout>

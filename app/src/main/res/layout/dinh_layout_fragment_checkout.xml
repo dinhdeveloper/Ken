@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/cl_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/layout_header" />
+
+        <RelativeLayout
+            android:layout_marginHorizontal="@dimen/dp10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <include layout="@layout/dinh_custom_item_address" />
+        </RelativeLayout>
+
+        <EditText
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/rosario_medium"
+            android:paddingHorizontal="@dimen/dp10"
+            android:hint="Thêm ghi chú"
+            android:layout_marginVertical="@dimen/dp15"
+            android:layout_marginHorizontal="@dimen/dp20"
+            android:background="@drawable/bg_shadown"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+
+        <TextView
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:gravity="center|start"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="@dimen/dp20"
+            android:layout_marginBottom="@dimen/dp15"
+            android:background="@drawable/bg_shadown"
+            android:fontFamily="@font/rosario_medium"
+            android:text="Thanh toán khi nhận hàng"
+            android:paddingHorizontal="@dimen/dp10" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:background="@drawable/bg_shadown"
+                android:layout_marginHorizontal="@dimen/dp20"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <include layout="@layout/dinh_custom_item_product_checkout"/>
+                <include layout="@layout/dinh_custom_item_product_checkout"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="@dimen/dp20"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:gravity="center"
+            android:background="@color/cl_pick"
+            android:layout_width="40dp"
+            android:layout_height="40dp">
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@drawable/ic_ken_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginLeft="@dimen/dp10"
+            android:gravity="center"
+            android:background="@color/cl_pick"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
